@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultas FIPE</title>
+
+    <script src="./database.js" defer></script>
+    <script src="./script.js" defer></script>
+
+    <link rel="stylesheet" href="./bootstrap.min.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <main>
+        <form>
+           
+            <input id="input-search" class="form-control" placeholder="Digite sua pesquisa" input="text" />
+            <button id="btn-search" class="btn btn-primary">Pesquisar</button>
+            <button id="btn-sort-marca" class="btn btn-secondary" onclick="sortData(event,'marca')">Organizar Marca</button>
+            <button id="btn-sort-marca" class="btn btn-secondary" onclick="sortData(event,'modelo')">Oraganizar Modelo</button>
+            <button id="btn-sort-marca" class="btn btn-secondary" onclick="sortData(event,'ano')">Organizar Ano</button>
+            <button id="btn-sort-marca" class="btn btn-secondary" onclick="sortData(event,'preco')">Organizar Preço</button>
+        </form>
+        <table class="table">
+            <tr>
+                <th>Marca</th>
+                <th>Modelo</th>
+                <th>Ano</th>
+                <th>Preço</th>
+            </tr>
+            <tr>
+                <td>Fiat</td>
+                <td>Palio ELX 1.0 Fire</td>
+                <td>2010</td>
+                <td>R$26.429,00</td>
+            </tr>
+        </table>
+    </main>
+</body>
+
+</html>
